@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms - Hotel Booking</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .rooms-header {
+  position: relative;
+  background: url('./images/hotel-header.jpg') no-repeat center center;
+  background-size: cover;
+  height: 350px; /* Keeping the same height as your previous version */
+  color: #caa169;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Gradient overlay for better text visibility */
+.rooms-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.rooms-header:hoevr{
+    color:#caa169;
+}
+.rooms-header h1 {
+  font-size: 3.5rem; /* Adjust size based on your preference */
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Soft shadow for better contrast */
+}
+
+.rooms-header p {
+  font-size: 1.5rem;
+  z-index: 2;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9); /* Soft white text */
+}
+
+@media (max-width: 768px) {
+  .rooms-header {
+    height: 300px; /* Keep the height smaller on mobile screens */
+  }
+
+  .rooms-header h1 {
+    font-size: 2.5rem; /* Smaller font size on mobile */
+  }
+
+  .rooms-header p {
+    font-size: 1.2rem; /* Adjust paragraph font size for mobile */
+  }
+}
+
+    .room-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg">
+     <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.jpg" class="img-fluid" alt="logo" width="80px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <!-- <span class="navbar-toggler-icon"></span>-->
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav menu-navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUs.html">About</a>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="rooms.html">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">Price</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Blog">Blog</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0">
+                <a class="main-btn" href="Booking.html">Book Now</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0">
+                <a class="main-btn" href="Login.html">Sign in </a>
+              </li>
+              
+            </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+
+<!-- Header Section -->
+<header class="rooms-header">
+  <div class="container">
+    <h1>Our Rooms</h1>
+    <p class="lead">Choose from a range of rooms to suit every traveler’s needs</p>
+  </div>
+</header>
+
+<!-- Rooms Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Room 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card room-card">
+          <img src="./images/room1.webp" class="card-img-top" alt="Deluxe Room">
+          <div class="card-body">
+            <h5 class="card-title">Deluxe Room</h5>
+            <p class="card-text">Spacious room with king-size bed, city view, and premium amenities for a luxurious stay.</p>
+            <p class="card-text"><strong>Price:</strong> $250/night</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card room-card">
+          <img src="./images/room2 .webp" class="card-img-top" alt="Executive Suite">
+          <div class="card-body">
+            <h5 class="card-title">Executive Suite</h5>
+            <p class="card-text">Luxurious suite with separate living area, panoramic views, and world-class service.</p>
+            <p class="card-text"><strong>Price:</strong> $400/night</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card room-card">
+          <img src="./images/room4.webp" class="card-img-top" alt="Standard Room">
+          <div class="card-body">
+            <h5 class="card-title">Standard Room</h5>
+            <p class="card-text">Comfortable room with queen-size bed and modern amenities for a budget-friendly stay.</p>
+            <p class="card-text"><strong>Price:</strong> $150/night</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Room 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card room-card">
+          <img src="./images/room3.jpg" class="card-img-top" alt="Family Room">
+          <div class="card-body">
+            <h5 class="card-title">Family Room</h5>
+            <p class="card-text">Ideal for families, this room offers two queen-size beds and plenty of space for everyone.</p>
+            <p class="card-text"><strong>Price:</strong> $300/night</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Room 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card room-card">
+          <img src="./images/room5.jpg" class="card-img-top" alt="Luxury Suite">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Suite</h5>
+            <p class="card-text">Our most exclusive suite, featuring a private terrace, jacuzzi, and personalized services.</p>
+            <p class="card-text"><strong>Price:</strong> $700/night</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card room-card">
+          <img src="./images/room6.avif" class="card-img-top" alt="Economy Room">
+          <div class="card-body">
+            <h5 class="card-title">Economy Room</h5>
+            <p class="card-text">Simple and cozy room with essential amenities for the budget-conscious traveler.</p>
+            <p class="card-text"><strong>Price:</strong> $100/night</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>&copy; 2024 Hotel Booking. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

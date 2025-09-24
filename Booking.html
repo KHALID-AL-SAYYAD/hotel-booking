@@ -108,16 +108,16 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav menu-navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link" href="AboutUs.html">About</a>
+                <a class="nav-link" href="./AboutUs.html">About</a>
               
               <li class="nav-item">
-                <a class="nav-link" href="rooms.html">Rooms</a>
+                <a class="nav-link" href="./rooms.html">Rooms</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Services.html">Services</a>
+                <a class="nav-link" href="./Services.html">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#team">Team</a>
@@ -126,16 +126,16 @@
                 <a class="nav-link" href="#Gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="price.html">Price</a>
+                <a class="nav-link" href="./price.html">Price</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Blog">Blog</a>
               </li>
               <li class="nav-item mt-3 mt-lg-0">
-                <a class="main-btn" href="Booking.html">Book Now</a>
+                <a class="main-btn" href="./Booking.html">Book Now</a>
               </li>
               <li class="nav-item mt-3 mt-lg-0">
-                <a class="main-btn" href="Login.html">Sign in </a>
+                <a class="main-btn" href="./Login.html">Sign in </a>
               </li>
               
             </ul>
@@ -271,20 +271,18 @@ function updateGuestInfo() {
 
 
 function redirectToPage(event) {
-    event.preventDefault(); // Prevent form submission
-
+    event.preventDefault();
     const destination = document.getElementById('destinationInput').value.toLowerCase();
-
     if (destination.includes('istanbul')) {
-        window.location.href = 'istanbul.html'; // Replace with actual Istanbul page URL
+        window.location.href = './istanbul.html';
     } else if (destination.includes('london')) {
-        window.location.href = 'london.html';
+        window.location.href = './london.html';
     } else if (destination.includes('tokyo')) {
-        window.location.href = 'Tokyo.html';
+        window.location.href = './Tokyo.html';
     } else if (destination.includes('paris')) {
-        window.location.href = 'paris.html';
-    } else if (destination.includes('newyork')) {
-        window.location.href = 'newyork.html';
+        window.location.href = './Paris.html';
+    } else if (destination.includes('newyork') || destination.includes('new york')) {
+        window.location.href = './Newyork.html';
     } else {
         alert('No results found for the entered destination.');
     }
